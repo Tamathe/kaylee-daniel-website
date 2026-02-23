@@ -63,7 +63,7 @@ export default defineType({
           title: 'Class Year',
           type: 'string',
           description: 'E.g., "Junior", "Sophomore", "Senior"',
-          initialValue: 'Junior',
+          initialValue: 'Sophomore',
         }),
         defineField({
           name: 'major',
@@ -84,7 +84,7 @@ export default defineType({
           title: 'Years at UK',
           type: 'string',
           description: 'E.g., "3 Years" or "2021–Present"',
-          initialValue: '3 Years',
+          initialValue: '1st Year at UK',
         }),
       ],
     }),
