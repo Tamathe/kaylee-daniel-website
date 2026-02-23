@@ -1,7 +1,5 @@
 import { Resend } from 'resend'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
-
 export async function POST(req: Request) {
   try {
     const body = await req.json()
@@ -24,11 +22,13 @@ export async function POST(req: Request) {
     const toEmail = process.env.CONTACT_EMAIL
     const fromEmail = process.env.CONTACT_FROM_EMAIL || 'noreply@resend.dev'
 
-    if (!toEmail) {
+    if (!toEmail || !process.env.RESEND_API_KEY) {
       // If no email configured, still return success (form works, just no email sent)
-      console.log('CONTACT_EMAIL not configured. Form submission:', { name, email, company, inquiryType, message })
+      console.log('Email not configured. Form submission:', { name, email, company, inquiryType, message })
       return Response.json({ success: true })
     }
+
+    const resend = new Resend(process.env.RESEND_API_KEY)
 
     const typeLabels: Record<string, string> = {
       nil: 'NIL / Brand Partnership',
