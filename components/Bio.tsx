@@ -39,7 +39,7 @@ export default function Bio({ data }: BioProps) {
           block.children?.map((child) => child.text).join('')
         )
         .join('\n\n')
-    : "A Division I track & field athlete competing for the University of Kentucky Wildcats, Kaylee Daniel has made pole vault her life's passion since picking up the event in middle school. Growing up in Georgetown, Kentucky — just miles from UK's campus — choosing the Wildcats felt like destiny. Now in her junior year, Kaylee balances a full academic schedule in Sports Administration with the demands of elite collegiate athletics, driven by one goal: reaching her ceiling and going beyond it."
+    : "A Division I track & field athlete competing for the University of Kentucky Wildcats, Kaylee Daniel is a two-time Nevada state pole vault champion out of Liberty High School in Las Vegas. After a standout freshman season at the University of Houston — where she posted a 4.01m outdoor PR — she transferred to Kentucky for the 2025–26 season and immediately hit a collegiate indoor PR of 4.15m. Now in her sophomore year, Kaylee balances a full academic schedule in Clinical Leadership Management with the demands of elite SEC athletics, driven by one goal: reaching her ceiling and going beyond it."
 
   return (
     <section id="about" className="relative py-24 md:py-36 bg-bg-primary overflow-hidden">
@@ -73,17 +73,15 @@ export default function Bio({ data }: BioProps) {
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
               ) : (
-                /* Placeholder gradient */
-                <div className="w-full h-full flex flex-col items-center justify-center"
-                  style={{ background: 'linear-gradient(160deg, #111 0%, #0d1a40 50%, #0a0a0a 100%)' }}>
-                  <div className="text-center space-y-2">
-                    <div
-                      className="text-8xl font-display text-electric/30 leading-none"
-                      style={{ fontFamily: "'Bebas Neue', Impact, sans-serif" }}
-                    >KD</div>
-                    <p className="text-white/20 text-xs tracking-widest uppercase">Photo Coming Soon</p>
-                  </div>
-                </div>
+                /* Static fallback headshot */
+                <Image
+                  src="/kaylee-daniel-headshot.png"
+                  alt="Kaylee Daniel — UK Athletics"
+                  fill
+                  className="object-cover object-top"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  priority
+                />
               )}
 
               {/* Overlay gradient at bottom */}
@@ -103,9 +101,9 @@ export default function Bio({ data }: BioProps) {
                 className="text-3xl text-electric font-display leading-none"
                 style={{ fontFamily: "'Bebas Neue', Impact, sans-serif" }}
               >
-                4.00m
+                4.01m
               </p>
-              <p className="text-xs text-white/40 mt-1">13'1.5"</p>
+              <p className="text-xs text-white/40 mt-1">13'1.75"</p>
             </motion.div>
           </motion.div>
 
