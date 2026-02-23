@@ -56,7 +56,7 @@ export default defineType({
           title: 'Hometown',
           type: 'string',
           description: 'E.g., "Georgetown, KY"',
-          initialValue: 'Georgetown, KY',
+          initialValue: 'Las Vegas, NV',
         }),
         defineField({
           name: 'year',
@@ -70,7 +70,7 @@ export default defineType({
           title: 'Academic Major',
           type: 'string',
           description: 'E.g., "Sports Administration" or "Kinesiology"',
-          initialValue: 'Sports Administration',
+          initialValue: 'Clinical Leadership Management',
         }),
         defineField({
           name: 'height',

@@ -31,18 +31,18 @@ export const placeholderHero: HeroData = {
   subTagline: '2024–25 Season · Junior',
   ctaText: 'See My Stats',
   ctaLink: '#stats',
-  accentStat: '4.00m PR',
+  accentStat: 'Top 50 Nationally',
 }
 
 export const placeholderBio: BioData = {
   headline: 'Built for Height',
   quote: '"The bar is just the beginning."',
   quickFacts: {
-    hometown: 'Georgetown, KY',
+    hometown: 'Las Vegas, NV',
     year: 'Junior',
-    major: 'Sports Administration',
+    major: 'Clinical Leadership Management',
     height: "5'8\"",
-    yearsAtUK: '3 Years',
+    yearsAtUK: '2 Years',
   },
 }
 
@@ -287,7 +287,7 @@ export const placeholderPress: PressEntryData[] = [
     publication: 'Southeastern Conference',
     date: '2024-08-01',
     description:
-      'Recognized on the SEC Academic Honor Roll for excellence in the classroom and on the track — maintaining a 3.8 GPA while competing at the Division I level.',
+      'Recognized on the SEC Academic Honor Roll for excellence in the classroom and on the track — Clinical Leadership Management student and UK Honors College member competing at the Division I level.',
     isFeatured: false,
     displayOrder: 5,
   },
