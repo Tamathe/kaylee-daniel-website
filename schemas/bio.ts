@@ -34,14 +34,14 @@ export default defineType({
       title: 'Personal Quote',
       type: 'string',
       description:
-        'A motivational quote or personal motto displayed in large text — can be something you live by, a coach's saying, or your own words.',
+        "A motivational quote or personal motto displayed in large text — can be something you live by, a coach's saying, or your own words.",
       initialValue: '"The bar is just the beginning."',
     }),
     defineField({
       name: 'quoteAuthor',
       title: 'Quote Author (optional)',
       type: 'string',
-      description: 'Who said the quote? Leave blank if it's your own.',
+      description: "Who said the quote? Leave blank if it's your own.",
     }),
 
     // ── Quick Facts ───────────────────────────────────────────────────────────
